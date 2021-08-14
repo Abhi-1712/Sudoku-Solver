@@ -39,6 +39,7 @@ def display_solution():
 
 
 print("Enter the Sudoku Puzzle(enter 0 in place of empty blocks): ")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 puzzle = []
 for i in range(9):
     x = list(map(int, input().split()))
