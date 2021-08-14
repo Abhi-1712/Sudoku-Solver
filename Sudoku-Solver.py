@@ -1,6 +1,4 @@
-import numpy as np
-
-
+# Sudoku-Solver
 def sudoku_solve():
     global puzzle
     for row in range(9):
@@ -33,7 +31,10 @@ def check(row, column, possible_number):
 
 def display_solution():
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    print(np.matrix(puzzle))
+    for a in range(9):
+        for b in range(9):
+            print(puzzle[a][b], end=' ')
+        print()
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
 
